@@ -12,6 +12,12 @@ function resolver() {
   const a = aEl.value;
   const b = bEl.value;
   const c = cEl.value;
+
+  if (a == 0) {
+    window.alert('Como a = 0, não é uma equação de 2º grau.');
+    return;
+  }
+
   const delta = b ** 2 - 4 * a * c;
 
   deltaEl.value = delta;
